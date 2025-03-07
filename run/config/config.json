@@ -1,0 +1,47 @@
+{
+    "entrez_parameters": {
+        "request_limit": 5,
+        "sleep_time": 0.5,
+        "email": "your@email.address",
+        "api_key": "your_entrez_api_key"
+    },
+
+
+    "blast_parameters": {
+        "db": "nr_cluster_seq",
+        "tax_IDs": ["2"],
+        "e_value": 10E-15,
+        "query_coverage": 0.7,
+        "max_hits": 50
+    },
+
+    "sequences_parameters": {
+        "max_intergenic_size": 150,
+        "min_intergenic_size": 50,
+        "upstream_size_region": 10000,
+        "downstream_size_region": 50,
+        "max_sequence_length": 500,
+		"crawl_back": true,
+		"fuse_intergenic": true
+    },
+
+    "max_identity": 0.8,
+
+    "meme_parameters": {
+        "mod": "anr",
+        "nmotifs": 5,
+        "minw": 8,
+        "maxw": 22,
+        "revcomp": true,
+        "pal": false
+    },
+
+    "run_only_meme": false,
+
+    "output_parameters" : {
+        "folder_name" : "output",
+        "folder_rerun_meme": "meme_out_2"
+    },
+
+    "input_records" : ["NP_xxxxxx.1"]
+}
